@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 32: expected statement.
+    povname = renpy.input("Well done,") 
+            ^
+
+File "game/script.rpy", line 33: expected statement.
+    povname = povname.strip()
+            ^
+
+Ren'Py Version: Ren'Py 7.4.6.1693
+Sat Jul  3 11:50:18 2021
