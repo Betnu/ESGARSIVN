@@ -75,7 +75,8 @@ label start:
 
     #INICIO ESCENA 2
 
-
+    #Esto es una prueba
+    
     # This ends the game.
     #c "%(player_name)s hijo de puta"
     return
