@@ -73,8 +73,6 @@ label start:
 
     #FIN ESCENA 1
 
-    #INICIO ESCENA 2
-
     #Esto es una prueba
     
     # This ends the game.
