@@ -6,6 +6,7 @@
 define mc = Character("[povname]", color="#ffffff")
 define zach = Character("Prof. Nabradia", color="#800080")
 define zen = Character("Z’enyth", color="#ff0000")
+define gwyn = Character("Gwyneth", color="#ffff00")
 define eyeopen = ImageDissolve("eyesopen.jpg", 1.5, 100)
 define eyeclose = ImageDissolve("eyesopen.jpg", 1.5, 100, reverse=True)
 define genderflag = False
@@ -240,6 +241,65 @@ label start:
 
     #INICIO ESCENA 4
 
+    "Following that guy’s instructions I was able to find the meeting room. The door was half open, leading into a pretty small classroom, fitting for the renown they seem to have."
+    "And in front of the window there was a young woman, neatly dressed in a suit and vest. She couldn’t be more than three years older than me, but she had an air of much more importance than I would ever have."
+    "This must surely be the person Z’enyth referred to as “boss”."
+
+    mc "H-hello? T-this is the ESGARSI meeting room, right?"
+
+    "She turned around as she heard my voice and stared down on me with the most terribly stern eyes I had ever seen."
+
+    "Boss" "Yes, it is. And be welcome to join me in discussion, be it slander or mockery. I’ll take you on with more dignity than you could ever muster."
+
+    "I gulped down. This day had started so well, why do I have to keep finding myself in situations like this?"
+
+    mc "I-I’m so sorry, I didn’t want to offend you, I just saw the flyer earlier today, and met some of the members an-and thought I could come to the meeting, b-but I didn’t know I’d be such an inconvenience I’m so sorryyyyyyyyyyy"
+
+    "I gave my deepest bow of apology, almost starting shaking. You idiot, many times can I screw up in a day? However, when I said that her face immediately softened, and the stern stare she wore became of regret."
+
+    "Boss" "Oh no, no, no, no, no. I’m sorry, I’m the one that’s sorry. We’re just used to getting people with not so nice intentions. But oh, please, don’t get scared, it’s usually a pretty nice place, it’s just that there’s rude people everywhere, right? But we would love to have you with us!"
+    #cambiar esta
+    "She gave me a quite awkward smile, realising her mistake and not really knowing how to get out of the situation. After all the tension accumulated today I couldn’t help but chuckle."
+
+    mc "It’s fine, it’s fine. There was a lot happening today, but I met that Professor Nabradia guy, Z’enyth, and a white haired kendo club member that I think is also a member here and they all seemed nice."
+
+    "Boss" "They all seemed nice? Even…? Nevermind, I’m glad you had a good impression. That’s actually all of us, the three official members: Z’enyth, betnu, and me, Gwyneth Purrsen. And of course, Zach, our… benefactor."
+
+    "She said that last word under her breath, clenching her teeth."    
+
+    gwyn "So please, stay during our meeting and seriously consider joining. I’m being completely honest when I say we’d love to have you here."
+
+    mc "Yes, I want to be at the meeting, but honestly, I…"
+
+    "My voice started breaking a bit. She looks like a smart person, really invested in her club, and I… Well, there’s no way of denying the truth."
+
+    mc "I’m not very smart, and academically… I had a very rough start, almost dropped out. I’m constantly told by the teachers that I’m not going to achieve anything at this rate… I don’t think I would be of much help to a place like this…"
+
+    "Gwyneth gave me a stern look again, but this time she wasn’t looking down on me. She was serious, even angry, but not the kind of anger directed at me."
+    #cambiar la de abajo
+    gwyn "Do you know what we do here? We talk about things that are considered truth. Immutable, unshakable. The pillars of knowledge everything rests on. And we try to deny them. But don’t get it wrong, it isn’t a mere exercise of denial, but a struggle against power. "
+    gwyn "We take the truths that people in power have built their castles on, where they rest, unmovable, rejecting any discussion so they can comfortably keep their positions, not letting knowledge advance, and we take those truths down." 
+    gwyn "It’s only when discussion is truly open for everybody to participate that knowledge will truly advance. And not only knowledge. It is our dream to level it down so the elitism and mysticism of academia disappears, to make people realise that everybody can think, everybody can have good ideas."
+    #cambiar la de arriba
+    "She looked at me dead in the eye and smirked." 
+
+    gwyn "Do you know why some professors have been questioning your worth instead of helping you and boosting your confidence?" 
+    gwyn "It’s all for the same reason. You can only be on top when you have people below you. They call themselves an elite, but are just a bunch of bullies. And I can assure you, you’re not dumb, you’re not stupid, you just haven’t been taught the proper way, because that wouldn’t be good for them. But we’ll accept your opinions here." 
+    #cambiar la de arriba
+    gwyn "Your alleged inferiority is the fake truth they build their thrones on. And that’s the kind of fake truth we are ready to take down at any moment!"
+
+    "As she said this, she seemed so bright, so dazzling… And not only her. Z’enyth, who offered me his kindness. Betnu, who came to help me even before realising the fight was about the ESGARSI."
+    "I know I won’t be of much help, but… Maybe I can change. That’s the reason I came back, isn’t it? This is the place I want to be in. A tear fell off my cheek, this time a happy one. I don’t even need the meeting, I want to join!"
+
+    "While I was thinking this, someone knocked on the half open door, showing his face with an apologetic look."
+
+    zen "Sorry, I’m late! I was a bit busy and got distracted… Oh! I see %(povname)s is here! Are you joining us then?"
+
+    "I nodded."
+    "Betnu came in after him. The meeting wasn’t much of a meeting, they just wanted to know me a little better, and also talked about themselves and what they do. And when I say they, I mean Z’enyth and Gwyneth, as Betnu just stayed quiet, smiling."
+    "I think he might be unable to speak. We just had a nice talk and then left, planning to also meet on another day. Guess that makes me an official member now. I wonder what will happen from now on, but for the first time in a long time, I had hope."
+
+    #FIN ESCENA 4
     # This ends the game.
     #c "%(player_name)s hijo de puta"
     return
