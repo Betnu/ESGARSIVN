@@ -1,34 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 127, in script
-    "While walking I couldn’t help but keep staring at that piece of paper."
-KeyError: u'NAME'
+  File "game/script.rpy", line 216, in script
+    if(%genderflag == False):
+SyntaxError: invalid syntax (script.rpy, line 216)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 127, in script
-    "While walking I couldn’t help but keep staring at that piece of paper."
-  File "renpy/ast.py", line 715, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "renpy/exports.py", line 1417, in say
-    who(what, *args, **kwargs)
-  File "renpy/character.py", line 1206, in __call__
-    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
-  File "renpy/character.py", line 1125, in prefix_suffix
-    return (sub(prefix) + sub(body) + sub(suffix))
-  File "renpy/character.py", line 1105, in sub
-    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
-  File "renpy/substitutions.py", line 270, in substitute
-    s = formatter.vformat(s, (), kwargs)
-  File "/home/tom/ab/renpy-build/tmp/install.android-x86_64/lib/python2.7/string.py", line 563, in vformat
-  File "/home/tom/ab/renpy-build/tmp/install.android-x86_64/lib/python2.7/string.py", line 585, in _vformat
-  File "/home/tom/ab/renpy-build/tmp/install.android-x86_64/lib/python2.7/string.py", line 646, in get_field
-  File "/home/tom/ab/renpy-build/tmp/install.android-x86_64/lib/python2.7/string.py", line 605, in get_value
-KeyError: u'NAME'
+  File "game/script.rpy", line 216, in script
+    if(%genderflag == False):
+  File "renpy/ast.py", line 1892, in execute
+    if renpy.python.py_eval(condition):
+  File "renpy/python.py", line 2247, in py_eval
+    code = py_compile(code, 'eval')
+  File "renpy/python.py", line 835, in py_compile
+    raise e
+SyntaxError: invalid syntax (script.rpy, line 216)
 
 Windows-10-10.0.19041
 Ren'Py 7.4.6.1693
 ESGARSI 1.0
-Sun Jul  4 11:07:33 2021
+Sun Jul  4 16:22:07 2021

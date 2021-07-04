@@ -8,6 +8,7 @@ define zach = Character("Prof. Nabradia", color="#800080")
 define zen = Character("Z’enyth", color="#ff0000")
 define eyeopen = ImageDissolve("eyesopen.jpg", 1.5, 100)
 define eyeclose = ImageDissolve("eyesopen.jpg", 1.5, 100, reverse=True)
+define genderflag = False
 
 # The game starts here.
 
@@ -17,6 +18,18 @@ label start:
     $ povname = povname.strip()
     $ povsurname = renpy.input("Your surname")
     $ povsurname = povsurname.strip()
+    menu gender:
+        "Choose your pronoun"
+        "He/him":
+            $ povpronoun1 = "he"
+            $ povpronoun2 = "him"
+        "She/her":
+            $ povpronoun1 = "she"
+            $ povpronoun2 = "her"
+        "They/them":
+            $ povpronoun1 = "they"
+            $ povpronoun2 = "them"
+            $ genderflag = True
     "..."
 
     show bg classroom with eyeopen
@@ -169,6 +182,63 @@ label start:
     zen "Yes, classes, true, gottagotooseeyouatthemeeting!"
 
     #FIN ESCENA 2
+
+    #INICIO ESCENA 3
+
+    "The remaining classes went through pretty easily too, with the biggest problem being me getting too distracted thinking about this ESGARSI thing."
+    "I was lucky to have met Z’enyth, because the flyer, unlike what professor Nabradia told me, definitely didn’t have all the information I needed. Professor Nabradia… An interesting fellow, I didn’t get to ask him what he teaches."
+    #Cambiar la de arriba creo 
+    "Maybe I’ll get to have him in one of my subjects. Anyway, classes have ended, so I should go check out the ESGARSI’s meeting room. I’m a bit nervous."
+
+    "As I got out of classes I headed to the Faculty of History, where their meeting room is supposed to be. It’s a big, old building, built in stone and with an air of majesty."
+    "It’d certainly be nice to come to a place like this regularly without the worries I’d have if I studied here. The problem it has is that, old as it is, its corridors are labyrinthic and it’s poorly indicated where each classroom is supposed to be. It’s a bit embarrassing, but I guess I have no other option than asking someone where the meeting room is. I approached one of the students in the main corridor."
+    #cambiar la de arriba
+    mc "E-excuse me. Do you know where I could find this classroom…?"
+
+    "He turned around and stared down at me. He already had a pretty scary face, but it only got worse when he saw the piece of paper I was holding."
+
+    "Rude man" "Huh? Why would you want to go there?"
+
+    mc "I-I’m thinking about joining, so I wanted to check them up…"
+
+    "Rude man" "Oh, so they managed to get another one. You must not be very smart then, right? What do you plan to do then? Going to conferences to waste all of our time? *chuckle* Pathetic."
+
+    "I didn’t know what to answer. I don’t really know anything about what they do, but this doesn’t sit right with me, that’s just not how you should treat anybody… I wanted to tell him something, but my mouth opened only for my voice to not come out."
+    "Well, maybe he’s right after all, I don’t know anything about these people. I must have been fooled into joining some fishy organisation… I can’t believe I’ve been so stupid once again, why do I even keep trying? But that Z’enyth guy seemed really sweet… would he really want to swindle someone? I-I-I"
+    #cambiar el de arriba
+    "Rude man" "What’s the matter, cat got your tongue? Or is it that you don’t have anything good to say about your new friends, because there’s nothing? Hey, guys! A new member for that EMGARZI bullshit! Look at %(povpronoun2)s, they didn’t seem to have got a bright one this time either."
+    #cambiar el de arriba
+    "The few people around started staring at me, some of them chuckling. This… this can’t be ok, it doesn’t matter what kind of people they are, why should they be humiliated… And why am I the one being humiliated, I haven’t even joined, he knows, I told him."
+    #cambiar el de arriba
+    "I… As I was starting to tear up, I saw something approaching from the corner of my eye. It was a young, white haired man, wearing some traditional japanese-looking clothes and a huge sheath on his back. He got closer to us, and as soon as he saw me almost crying he stared angrily at the rude man."
+    #cambiar el de arriba
+    "???" "…"
+    if genderflag == False:
+        "Rude man" "What do you want? I’m just telling someone off because %(povpronoun1)s deserves it, so please, leave me alone."
+    else:
+        "Rude man" "What do you want? I’m just telling someone off because %(povpronoun1)s deserve it, so please, leave me alone."
+
+    "???" "*sigh*"
+
+    "After sighing, the white-haired man quickly opened the sheath he was carrying, dropping it as he took his weapon out, immediately striking our impolite fellow."
+    "I closed my eyes, scared at how fast this escalated, and when I opened them I found that this rude guy had fallen on the ground while the white-haired man had his hand up in the air, completely empty, and started laughing."
+    "Looking down, I could see that the sheath was on the floor, with a kendo sword still inside it. I had never before seen such a masterful feint pulled off in real life, and while I can’t say it was in good taste, the scare he gave him was certainly satisfying."
+
+    "Rude man" "Y-you guys are just doing this because you aren’t able to back your ideas up with words. P-pathetic."
+
+    "He got up on the floor and hurried away. The same people that seconds before were laughing at me were now giggling at him. The white-haired man turned around to face me, with a big smug grin. He stared at the flyer I was holding in my hands, pointed at it, then pointed at himself and gave me a thumbs up."
+    #cambiar el de arriba
+    mc "O-oh. Thank you so much, that guy seemed dangerous… A-are you an ESGARSI member? I was trying to look for the meeting room."
+
+    "He nodded, pointed upwards and raised three fingers."
+
+    mc "Huh? What does that mean, second floor class 3?"
+
+    "After hearing my question he just shrugged and turned back, walking off to probably change back to his normal clothes. There are some weird people in this ESGARSI thing, but they all seem to be nice, I guess I’ll see him at the meeting if he truly was a member..."
+    #cambiar el de arriba
+    #FIN ESCENA 3
+
+    #INICIO ESCENA 4
 
     # This ends the game.
     #c "%(player_name)s hijo de puta"
