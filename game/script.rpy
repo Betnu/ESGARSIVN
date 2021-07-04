@@ -9,23 +9,25 @@ define m = Character("Marinha", color="#ffcccc")
 
 define mc = Character("[povname]")
 
+define eyeopen = ImageDissolve("eyesopen.jpg", 1.5, 100)
+define eyeclose = ImageDissolve("eyesopen.jpg", 1.5, 100, reverse=True)
+
 # The game starts here.
 
 label start:
     #INICIO ESCENA 1
-    #poner pestañeo de transicion
     "..."
 
-    show classroom
+    show bg classroom with eyeopen
 
     "Wh-where am I?"
 
-    hide classroom
+    hide bg classroom with eyeclose
 
     "The voice of a professor, my own hand trying too hard to take notes…"
 
-    show classroom
-
+    show bg classroom with eyeopen
+    #un sfx aqui tal vez en plan clink y empezar el bgm?
     "Oh, yeah, I’m in class."
     "And once again I’ve managed to lose my focus."
 
@@ -58,10 +60,10 @@ label start:
     "I ran out of the class and went to the bathroom, where I could openly cry all I wanted." #hay que cambiar texto
     "Maybe he was right after all, it would be better if I didn't come again…"
     #en vez de ponerlo de golpe negro igual alguna transicion
-    hide classroom
+    hide bg classroom
     #inventar una forma de poner transicion aqui
     play sound "tower_clock.ogg"
-    show room
+    show bg room
     "H...hnnnng…"
     "That dream again…"
     "It’s been two months already, and I haven’t gone back to class since. Friendless and dumb, what a joke would it be."
@@ -73,8 +75,14 @@ label start:
 
     #FIN ESCENA 1
 
-    #Esto es una prueba
+    #INICIO ESCENA 2
     
+    "I gathered all my courage and finally decided to go back to class."
+    "Since it was the second week of the semester and I ran away in the middle of the first one it was quite hard to keep up, but putting up all my attentional abilities the first classes of the morning were finished before I had time to realise it. After all, I’ll have to redo the first semester again next year, so my priority right now isn’t to do academically well, but trying to keep up with the pace and getting myself in a good position. And speaking of that, I should really do something about my social relationships. There’s no way I can keep this up for four years just by myself."
+    mc "Ugggggh…"
+    "I’ve neglected my social abilities for so long… Where do I even start? How do people even meet each other? Maybe joining a club would be my best option…"
+
+
     # This ends the game.
     #c "%(player_name)s hijo de puta"
     return
