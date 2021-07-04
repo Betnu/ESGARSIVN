@@ -85,7 +85,7 @@ label start:
     #FIN ESCENA 1
 
     #INICIO ESCENA 2
-    
+    show bg tablondeanuncios with fade
     "I gathered all my courage and finally decided to go back to class."
     #ejemplo texto que se sale fuera
     "Since it was the second week of the semester and I ran away in the middle of the first one it was quite hard to keep up, but putting up all my attentional abilities the first classes of the morning were finished before I had time to realise it. After all, I’ll have to redo the first semester again next year, so my priority right now isn’t to do academically well, but trying to keep up with the pace and getting myself in a good position. And speaking of that, I should really do something about my social relationships. There’s no way I can keep this up for four years just by myself."
@@ -103,7 +103,7 @@ label start:
     "I heard a deep, soothing voice talking behind me."
     "It took me a few seconds to realise the question was directed to me."
     "I turned around and saw a tall, long-haired man. Just by his face I wouldn’t say he was that much older than me, he looked just like one of the senior students. His clothes, however, were too stereotypically professorish for a student to wear."
-
+    show zac
     mc "O-oh, I was just looking at the clubs. I know it’s a bit late, but it would be nice to find some place to fit in, any interesting club could do…"
 
     "???" "Any could do? Non non non non non. You got it all wrong."
@@ -113,7 +113,8 @@ label start:
 
     "I didn’t know how to react. Either this man had reached the truth of the universe or he was completely full of bullshit."
     "Whatever it was, he said all that with such confidence it was very hard not to think it was sincere."
-
+    show zac at left
+    show zac at center
     mc "S-so what do you recommend me…?"
     "???" "Ideally, you should be the one to find your own passion and pursue it, but if you really are so lost let me light the way up for you. This one!" #Igual separar el this is the one
 
@@ -135,23 +136,24 @@ label start:
     zach "PhD."
     mc "Yes, sorry. Professor nabradia, PhD. I’ll take it into consideration, but if you excuse me I should start going to my next class."
     zach "Of course. Take this with you, it will tell you all the information you’ll need."
-
+    show zac at right
     "He looked into his pocket and took out a completely wrinkled piece of paper. It was another copy of the ESGARSI flyer, also hand-drawn. It seemed a bit disrespectful to whomever drew it, but saying anything about it would probably only get me another long monologue, so I let it be. I took it with me and headed to my next class."
+    hide zac
     #queda justo tambien
     "While walking I couldn’t help but keep staring at that piece of paper."
     "While amateurish and inconspicuous when compared to the ones that filled the board, it certainly had a unique charm that you could only appreciate when looking at it closely."
     "It felt… I know it’s weird for me to say this about a piece of paper, but in some way it felt like home. For whatever it was, looking at it just made me smile." 
     "It feels like it could be a warm place to join, but Professor Nabradia’s talk about academicism… I’ve just come back and my grades have never been something to brag about, I should do as I said and aim lower, %(povname)s, don’t go getting your hopes up all by yourself…"
-
+    
     "*THUMP*"#sfx aqui obvio
-
+    show zen at right with vpunch
     "I bumped into someone, making both of us drop everything we were carrying. I was so busy looking at this dumb scrap of paper, thinking about what-ifs and what-nots… Why do I have to be so embarrassing, stupid stupid stupid stupiiiiiiiid."
     "I slowly opened my eyes, ready to face my consequences. In front of me, a catboy was kneeling on the ground, hurriedly picking his books up. His kind face and his hair tied up made him look so soft that I could only feel worse for having inconvenienced such a person. Before I could say anything, he noticed the flyer I just dropped and suddenly started staring at me, his eyes shining."
     #se sale
     "???" "Have you just…?"
 
     mc "Y-yes! I have just b-bumped into you, I’m so sorry! Please let me finish picking up your stuff, it’s the least thing I can d-"
-
+    show zen at center
     "He looked at me with a confused innocent face, as if he had no idea what I was talking about."
 
     "???" "Huh? But it was me who wasn’t paying attention. When I’m in a rush I always get so focused that I can’t just notice my surroundings. Anyway, that’s not important. This flyer… Are you thinking about joining the ESGARSI?"
@@ -179,7 +181,7 @@ label start:
     mc "Thanks, I’m %(povname)s. I guess I’ll come by, but now I should be getting back to class."
 
     "Z’enyth’s face changed quickly once again, as if he suddenly remembered the rush he said he was in at the start, as he quickly finished picking up his books and started walking, almost running."
-
+    hide zen with moveoutright
     zen "Yes, classes, true, gottagotooseeyouatthemeeting!"
 
     #FIN ESCENA 2
@@ -197,7 +199,7 @@ label start:
     mc "E-excuse me. Do you know where I could find this classroom…?"
 
     "He turned around and stared down at me. He already had a pretty scary face, but it only got worse when he saw the piece of paper I was holding."
-
+    show rudeman
     "Rude man" "Huh? Why would you want to go there?"
 
     mc "I-I’m thinking about joining, so I wanted to check them up…"
@@ -213,6 +215,7 @@ label start:
     #cambiar el de arriba
     "I… As I was starting to tear up, I saw something approaching from the corner of my eye. It was a young, white haired man, wearing some traditional japanese-looking clothes and a huge sheath on his back. He got closer to us, and as soon as he saw me almost crying he stared angrily at the rude man."
     #cambiar el de arriba
+    show betnu angry at left
     "???" "…"
     if genderflag == False:
         "Rude man" "What do you want? I’m just telling someone off because %(povpronoun1)s deserves it, so please, leave me alone."
@@ -220,35 +223,36 @@ label start:
         "Rude man" "What do you want? I’m just telling someone off because %(povpronoun1)s deserve it, so please, leave me alone."
 
     "???" "*sigh*"
-
+    show bg tableros with vpunch
     "After sighing, the white-haired man quickly opened the sheath he was carrying, dropping it as he took his weapon out, immediately striking our impolite fellow."
     "I closed my eyes, scared at how fast this escalated, and when I opened them I found that this rude guy had fallen on the ground while the white-haired man had his hand up in the air, completely empty, and started laughing."
     "Looking down, I could see that the sheath was on the floor, with a kendo sword still inside it. I had never before seen such a masterful feint pulled off in real life, and while I can’t say it was in good taste, the scare he gave him was certainly satisfying."
 
     "Rude man" "Y-you guys are just doing this because you aren’t able to back your ideas up with words. P-pathetic."
-
+    hide rudeman with moveoutright
     "He got up on the floor and hurried away. The same people that seconds before were laughing at me were now giggling at him. The white-haired man turned around to face me, with a big smug grin. He stared at the flyer I was holding in my hands, pointed at it, then pointed at himself and gave me a thumbs up."
     #cambiar el de arriba
     mc "O-oh. Thank you so much, that guy seemed dangerous… A-are you an ESGARSI member? I was trying to look for the meeting room."
-
+    show betnu happy at center
     "He nodded, pointed upwards and raised three fingers."
 
     mc "Huh? What does that mean, second floor class 3?"
 
     "After hearing my question he just shrugged and turned back, walking off to probably change back to his normal clothes. There are some weird people in this ESGARSI thing, but they all seem to be nice, I guess I’ll see him at the meeting if he truly was a member..."
+    hide betnu moveoutright
     #cambiar el de arriba
     #FIN ESCENA 3
 
     #INICIO ESCENA 4
-
+    show bg base
     "Following that guy’s instructions I was able to find the meeting room. The door was half open, leading into a pretty small classroom, fitting for the renown they seem to have."
     "And in front of the window there was a young woman, neatly dressed in a suit and vest. She couldn’t be more than three years older than me, but she had an air of much more importance than I would ever have."
     "This must surely be the person Z’enyth referred to as “boss”."
-
+    show gwyn 
     mc "H-hello? T-this is the ESGARSI meeting room, right?"
 
     "She turned around as she heard my voice and stared down on me with the most terribly stern eyes I had ever seen."
-
+    show gwyn angry
     "Boss" "Yes, it is. And be welcome to join me in discussion, be it slander or mockery. I’ll take you on with more dignity than you could ever muster."
 
     "I gulped down. This day had started so well, why do I have to keep finding myself in situations like this?"
@@ -256,7 +260,7 @@ label start:
     mc "I-I’m so sorry, I didn’t want to offend you, I just saw the flyer earlier today, and met some of the members an-and thought I could come to the meeting, b-but I didn’t know I’d be such an inconvenience I’m so sorryyyyyyyyyyy"
 
     "I gave my deepest bow of apology, almost starting shaking. You idiot, many times can I screw up in a day? However, when I said that her face immediately softened, and the stern stare she wore became of regret."
-
+    show gwyn
     "Boss" "Oh no, no, no, no, no. I’m sorry, I’m the one that’s sorry. We’re just used to getting people with not so nice intentions. But oh, please, don’t get scared, it’s usually a pretty nice place, it’s just that there’s rude people everywhere, right? But we would love to have you with us!"
     #cambiar esta
     "She gave me a quite awkward smile, realising her mistake and not really knowing how to get out of the situation. After all the tension accumulated today I couldn’t help but chuckle."
@@ -292,10 +296,11 @@ label start:
     "I know I won’t be of much help, but… Maybe I can change. That’s the reason I came back, isn’t it? This is the place I want to be in. A tear fell off my cheek, this time a happy one. I don’t even need the meeting, I want to join!"
 
     "While I was thinking this, someone knocked on the half open door, showing his face with an apologetic look."
-
+    show zen at left
     zen "Sorry, I’m late! I was a bit busy and got distracted… Oh! I see %(povname)s is here! Are you joining us then?"
 
     "I nodded."
+    show betnu at right
     "Betnu came in after him. The meeting wasn’t much of a meeting, they just wanted to know me a little better, and also talked about themselves and what they do. And when I say they, I mean Z’enyth and Gwyneth, as Betnu just stayed quiet, smiling."
     "I think he might be unable to speak. We just had a nice talk and then left, planning to also meet on another day. Guess that makes me an official member now. I wonder what will happen from now on, but for the first time in a long time, I had hope."
 

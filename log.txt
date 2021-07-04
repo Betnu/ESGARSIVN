@@ -1,41 +1,42 @@
-Sun Jul  4 18:49:27 2021
+Sun Jul  4 19:15:38 2021
 Windows-10-10.0.19041
 Ren'Py 7.4.6.1693
  
 
-Bootstrap to the start of init.init took 0.49s
+Bootstrap to the start of init.init took 0.24s
 Early init took 0.01s
-Loader init took 0.29s
-Loading error handling took 0.32s
-Loading script took 1.36s
-Loading save slot metadata. took 0.39s
+Loader init took 0.15s
+Loading error handling took 0.11s
+Loading script took 1.49s
+Loading save slot metadata. took 0.14s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.37s
-Loading analysis data took 0.06s
+ - Init at renpy/common/00updater.rpy:23 took 0.30402 s.
+Running init code took 0.57s
+Loading analysis data took 0.09s
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Sihoc\\AppData\\Roaming/RenPy/backups\\ESGARSI':
-Dump and make backups. took 0.31s
+Dump and make backups. took 0.42s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.04s
+Initial gc. took 0.11s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.85s
+Creating interface object took 1.94s
 Cleaning stores took 0.00s
-Init translation took 0.10s
-Build styles took 0.01s
-Load screen analysis took 0.01s
-Analyze screens took 0.03s
-Save screen analysis took 0.14s
-Prepare screens took 0.17s
+Init translation took 0.18s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.20s
+Prepare screens took 0.31s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.06s
+Save bytecode. took 0.09s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.31s
+Interface start took 0.52s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -47,11 +48,11 @@ Version: '4.6.0 NVIDIA 465.89'
 Display Info: None
 Screen sizes: virtual=(1280, 720) physical=(1227, 690) drawable=(1227, 690)
 Maximum texture size: 4096x4096
-Total time until interface ready: 7.11093497276s
+Total time until interface ready: 8.51193499565s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.01s
-Load screen analysis took 0.05s
+Load screen analysis took 0.06s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s

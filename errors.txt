@@ -2,41 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 214: reached end of line when expecting ':'.
-    if()
-        ^
-
-File "game/script.rpy", line 217: expected statement.
-    ???: *sigh*
-    ^
-
-File "game/script.rpy", line 219: expected statement.
-    AFter sighing, the white-haired man quickly opened the sheath he was carrying, dropping it as he took his weapon out, immediately striking our impolite fellow. I closed my eyes, scared at how fast this escalated, and when I opened them I found that this rude guy had fallen on the ground while the white-haired man had his hand up in the air, completely empty, and started laughing. Looking down, I could see that the sheath was on the floor, with a kendo sword still inside it. I had never before seen such a masterful feint pulled off in real life, and while I can’t say it was in good taste, the scare he gave him was certainly satisfying.
-                 ^
-
-File "game/script.rpy", line 221: expected statement.
-    Rude man: Y-you guys are just doing this because you aren’t able to back your ideas up with words. P-pathetic.
-            ^
-
-File "game/script.rpy", line 223: expected statement.
-    He got up on the floor and hurried away. The same people that seconds before were laughing at me were now giggling at him. The white-haired man turned around to face me, with a big smug grin. He stared at the flyer I was holding in my hands, pointed at it, then pointed at himself and gave me a thumbs up.
-                                           ^
-
-File "game/script.rpy", line 225: expected statement.
-    MC: O-oh. Thank you so much, that guy seemed dangerous… A-are you an ESGARSI member? I was trying to look for the meeting room.
-      ^
-
-File "game/script.rpy", line 227: expected statement.
-    He nodded, pointed upwards and raised three fingers.
-             ^
-
-File "game/script.rpy", line 229: expected statement.
-    MC: Huh? What does that mean, second floor class 3?
-      ^
-
-File "game/script.rpy", line 231: expected statement.
-    After hearing my question he just shrugged and turned back, walking off to probably change back to his normal clothes. There are some weird people in this ESGARSI thing, but they all seem to be nice, I guess I’ll see him at the meeting if he truly was a member...
-                                                              ^
+File "game/script.rpy", line 149: end of line expected.
+    show zen with vpunch at right
+                         ^
 
 Ren'Py Version: Ren'Py 7.4.6.1693
-Sun Jul  4 16:12:07 2021
+Sun Jul  4 19:06:57 2021
