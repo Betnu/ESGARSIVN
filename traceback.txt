@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'eyeopen.jpg'>:
-  File "game/script.rpy", line 22, in script
-    show bg classroom with eyeopen
-IOError: Couldn't find file 'eyeopen.jpg'.
+While running game code:
+  File "game/script.rpy", line 60, in script
+    show bg room with fade()
+TypeError: 'MultipleTransition' object is not callable
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 22, in script
-    show bg classroom with eyeopen
+  File "game/script.rpy", line 60, in script
+    show bg room with fade()
   File "renpy/ast.py", line 1437, in execute
     renpy.exports.with_statement(trans, paired)
   File "renpy/exports.py", line 1682, in with_statement
@@ -18,33 +18,11 @@ Full traceback:
     clear=clear)
   File "renpy/display/core.py", line 3276, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3792, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "renpy/display/core.py", line 2521, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 786, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/transition.py", line 529, in render
-    image = render(self.image, width, height, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/transform.py", line 708, in render
-    return transform_render(self, width, height, st, at)
-  File "accelerator.pyx", line 140, in renpy.display.accelerator.transform_render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/im.py", line 607, in render
-    return cache.get(self, render=True)
-  File "renpy/display/im.py", line 271, in get
-    surf = image.load()
-  File "renpy/display/im.py", line 688, in load
-    raise e
-IOError: Couldn't find file 'eyeopen.jpg'.
+  File "renpy/display/core.py", line 3633, in interact_core
+    new_widget=layers_root)
+TypeError: 'MultipleTransition' object is not callable
 
 Windows-10-10.0.19041
 Ren'Py 7.4.6.1693
 ESGARSI 1.0
-Sun Jul  4 09:59:41 2021
+Sun Jul  4 10:18:53 2021

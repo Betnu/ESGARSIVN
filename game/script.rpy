@@ -3,11 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define c = Character("Catherine", color="#ffff00")
-
-define m = Character("Marinha", color="#ffcccc")
-
-define mc = Character("[povname]")
+define mc = Character("[povname]", color="#ffffff")
 
 define eyeopen = ImageDissolve("eyesopen.jpg", 1.5, 100)
 define eyeclose = ImageDissolve("eyesopen.jpg", 1.5, 100, reverse=True)
@@ -36,7 +32,6 @@ label start:
 
     "As if you could afford it."
     "Professor" "And this was today’s lecture, I hope everything was clear."
-    #Revisar el texto cuando tengamos background bien
     "And once again, it wasn’t."
     "I haven’t skipped a single class, I’ve gone through a lot of the bibliography, but none of this is making sense to me."
     "It all seems to be going in circles, pointlessly."
@@ -59,11 +54,10 @@ label start:
     "No, I can’t let anyone see me like this."
     "I ran out of the class and went to the bathroom, where I could openly cry all I wanted." #hay que cambiar texto
     "Maybe he was right after all, it would be better if I didn't come again…"
-    #en vez de ponerlo de golpe negro igual alguna transicion
-    hide bg classroom
-    #inventar una forma de poner transicion aqui
+    #en vez de ponerlo de golpe negro igual alguna transicion, se puede aumentar el tiempo que esta en negro
+    hide bg classroom with Pause(1.0)
     play sound "tower_clock.ogg"
-    show bg room
+    show bg room with fade
     "H...hnnnng…"
     "That dream again…"
     "It’s been two months already, and I haven’t gone back to class since. Friendless and dumb, what a joke would it be."
