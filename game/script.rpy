@@ -10,6 +10,7 @@ define gwyn = Character("Gwyneth", color="#ffff00")
 define eyeopen = ImageDissolve("eyesopen.jpg", 1.5, 100)
 define eyeclose = ImageDissolve("eyesopen.jpg", 1.5, 100, reverse=True)
 define genderflag = False
+define s = "s"
 
 # The game starts here.
 
@@ -24,12 +25,16 @@ label start:
         "He/him":
             $ povpronoun1 = "he"
             $ povpronoun2 = "him"
+            $ povpronoun3 = "himself"
         "She/her":
             $ povpronoun1 = "she"
             $ povpronoun2 = "her"
+            $ povpronoun3 = "herself"
         "They/them":
             $ povpronoun1 = "they"
             $ povpronoun2 = "them"
+            $ povpronoun3 = "themself"
+            $ s = ""
             $ genderflag = True
     "..."
 
@@ -217,10 +222,10 @@ label start:
     #cambiar el de arriba
     show betnu angry at left
     "???" "…"
-    if genderflag == False:
-        "Rude man" "What do you want? I’m just telling someone off because %(povpronoun1)s deserves it, so please, leave me alone."
-    else:
-        "Rude man" "What do you want? I’m just telling someone off because %(povpronoun1)s deserve it, so please, leave me alone."
+    #if genderflag == False:
+    "Rude man" "What do you want? I’m just telling someone off because %(povpronoun1)s deserve%(s)s it, so please, leave me alone."
+    #else:
+        #"Rude man" "What do you want? I’m just telling someone off because %(povpronoun1)s deserve it, so please, leave me alone."
 
     "???" "*sigh*"
     show bg tableros with vpunch
