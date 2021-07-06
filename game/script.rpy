@@ -40,7 +40,7 @@ label start:
     #$ povsurname = renpy.input("Your surname")
     #$ povsurname = povsurname.strip()
     menu gender:
-        "Choose your pronoun"
+        "Choose your pronouns"
         "He/him":
             $ povpronoun1 = "he"
             $ povpronoun2 = "him"
@@ -52,7 +52,7 @@ label start:
         "They/them":
             $ povpronoun1 = "they"
             $ povpronoun2 = "them"
-            $ povpronoun3 = "themself"
+            $ povpronoun3 = "themselves"
             $ s = ""
             $ genderflag = True
     "..."
@@ -69,7 +69,7 @@ label start:
     #un sfx aqui tal vez en plan clink y empezar el bgm?
     "Oh, yeah, I’m in class."
     "And once again I’ve managed to lose my focus."
-    "Well done, %(povsurname)s As if you could afford it."
+    "Well done, %(povsurname)s. As if you could afford it."
     "Professor" "And this was today’s lecture, I hope everything was clear."
     "And once again, it wasn’t."
     "I haven’t skipped a single class, I’ve gone through a lot of the bibliography, but none of this is making sense to me."
@@ -82,9 +82,9 @@ label start:
     "He gave me a stern look, which made me cower a bit."
     "Professor" "Look, I don’t want to sound mean, but you really don’t seem to have understood any word I’ve said for the entire semester."
     "Professor" "And it really shows in the assignments you’ve turned in."
-    "Professor" "If you’re unable to do anything well then I think you’d be better not coming back."
-    "Professor" "It’s ok not to be competent, just go do something else that fits you better instead of wasting both your and our time in here and let the people who really want to learn do their work."
-    "Each of his words felt like a dagger in my back."
+    "Professor" "If you’re unable to do anything well then I think you’d better not be coming back."
+    "Professor" "It’s ok not to be competent, just go do something else that fits you better instead of wasting both your and our time in here. Let the people who really want to learn do their job."
+    "Each one of his words felt like a dagger in my back."
     "There was some truth in them, but… No, that’s not it. I am not smart, that’s true, but that’s no way of talking to someone."
     "I tried to talk, but no voice came out of my mouth." 
     "It was as if there was nothing inside of me that could go out."
@@ -120,7 +120,7 @@ label start:
     "I never bothered giving it a look before, and all my expectations of silly, amateur flyers were shattered by the incredibly colourful, professional-looking designs that decorated the board."
     
     "Huh… The sport teams are way too intense for me, and at this point their level is incredibly high…"
-    "Maybe I should go for something calmer, that lets me talk to people easier, like the literature club or…"
+    "Maybe I should go for something calmer, that lets me talk to people more easily, like the literature club or…"
 
     "???" "What are you looking for?"
 
@@ -142,15 +142,15 @@ label start:
     mc "S-so what do you recommend me…?"
     "???" "Ideally, you should be the one to find your own passion and pursue it, but if you really are so lost let me light the way up for you. This one!" #Igual separar el this is the one
 
-    "He pointed at the corner of the bulletin board, where a cute hand-drawn flyer, much humbler than the other ones laid without calling anyone’s attention."
+    "He pointed at the corner of the bulletin board, where a cute hand-drawn flyer, much humbler than the other ones, laid without calling anyone’s attention."
     "It had the word “ESGARSI” written on it, and by its design it wasn’t clear at all what it was all about."
 
-    "???" "In this world we live in we have developed so many fields of study, of knowledge, of entertainment… There are so many things that can be the focus of our passion, but maybe because of that same reason, it can be so hard to decide for just one."
+    "???" "In this world we live in, we have developed so many fields of study, of knowledge, of entertainment… There are so many things that can be the focus of our passion, but maybe because of that same reason, it can be so hard to decide for just one."
     "???" "However, there’s a single aspect that has been able to fire up young blood throughout all of history."
     "???" "Rebellion! When we see power being abused, when we see suffering and injustice… we want to act against it!"
-    "???" "And this is no different in the academic world. A lot of professors, now sitting comfortably in their positions of power would rather keep knowledge stale than questioning the old knowledge, so clearly outdated. And we, as people of truth have a duty to fight against that." 
-    #Queda muy muy justo
-    "???" "It’s the way of nature! And that is what the ESGARSI strives for. Dedicated not to any single feel, but for the advancement of all knowledge, there’s no better place for a lost student to awaken their passion."
+    "???" "And this is no different in the academic world. A lot of professors, now sitting comfortably in their positions of power would rather keep knowledge stale than questioning the old knowledge, so clearly outdated." 
+    "???" "And we, as people of truth have a duty to fight against that."
+    "???" "It’s the way of nature! And that is what the ESGARSI strives for. Dedicated not to any single field, but for the advancement of all knowledge, there’s no better place for a lost student to awaken their passion."
 
     "W-what was that? Anyway, it sounds way too academic for me, I don’t think I’m that smart… But it may be an easy way to talk to new people."
 
@@ -158,29 +158,32 @@ label start:
     zach "Oh, please, don’t call me sir, my name is Zach. Zach Nabradia. But I’d rather have you refer to me as Professor Nabradia, PhD."
     mc "O-ok, thank you, Professor Nabradia, I-"
     zach "PhD."
-    mc "Yes, sorry. Professor nabradia, PhD. I’ll take it into consideration, but if you excuse me I should start going to my next class."
+    mc "Yes, sorry. Professor Nabradia, PhD. I’ll take it into consideration, but if you excuse me I should start going to my next class."
     zach "Of course. Take this with you, it will tell you all the information you’ll need."
     show zac at right
-    "He looked into his pocket and took out a completely wrinkled piece of paper. It was another copy of the ESGARSI flyer, also hand-drawn. It seemed a bit disrespectful to whomever drew it, but saying anything about it would probably only get me another long monologue, so I let it be. I took it with me and headed to my next class."
+    "He looked into his pocket and took out a completely wrinkled piece of paper. It was another copy of the ESGARSI flyer, also hand-drawn."
+    "It seemed a bit disrespectful to whomever drew it, but saying anything about it would probably only get me another long monologue, so I let it be. I took it with me and headed to my next class."
     hide zac
-    #queda justo tambien
-    "While walking I couldn’t help but keep staring at that piece of paper."
+  
+    "While walking, I couldn’t help but keep staring at that piece of paper."
     "While amateurish and inconspicuous when compared to the ones that filled the board, it certainly had a unique charm that you could only appreciate when looking at it closely."
-    "It felt… I know it’s weird for me to say this about a piece of paper, but in some way it felt like home. For whatever it was, looking at it just made me smile." 
-    "It feels like it could be a warm place to join, but Professor Nabradia’s talk about academicism… I’ve just come back and my grades have never been something to brag about, I should do as I said and aim lower, %(povname)s, don’t go getting your hopes up all by yourself…"
+    "It felt… I know it’s weird for me to say this about a piece of paper, but in some way it felt like home. Whatever the reason, looking at it just made me smile." 
+    "It feels like it could be a warm place to join, but Professor Nabradia’s talk about academicism… I’ve just come back and my grades have never been something to brag about."
+    "I should do as I said and aim lower. %(povname)s, don’t go getting your hopes up all by yourself…"
     
     "*THUMP*"#sfx aqui obvio
     show zen at right with vpunch
     "I bumped into someone, making both of us drop everything we were carrying. I was so busy looking at this dumb scrap of paper, thinking about what-ifs and what-nots… Why do I have to be so embarrassing, stupid stupid stupid stupiiiiiiiid."
-    "I slowly opened my eyes, ready to face my consequences. In front of me, a catboy was kneeling on the ground, hurriedly picking his books up. His kind face and his hair tied up made him look so soft that I could only feel worse for having inconvenienced such a person. Before I could say anything, he noticed the flyer I just dropped and suddenly started staring at me, his eyes shining."
-    #se sale
+    "I slowly opened my eyes, ready to face the consequences. In front of me, a catboy was kneeling on the ground, hurriedly picking his books up."
+    "His kind face and his hair, all tied up, made him look so soft that I could only feel worse for having inconvenienced such a person. Before I could say anything, he noticed the flyer I just dropped and suddenly started staring at me, his eyes shining."
+    
     "???" "Have you just…?"
 
     mc "Y-yes! I have just b-bumped into you, I’m so sorry! Please let me finish picking up your stuff, it’s the least thing I can d-"
     show zen at center
     "He looked at me with a confused innocent face, as if he had no idea what I was talking about."
 
-    "???" "Huh? But it was me who wasn’t paying attention. When I’m in a rush I always get so focused that I can’t just notice my surroundings. Anyway, that’s not important. This flyer… Are you thinking about joining the ESGARSI?"
+    "???" "Huh? But it was me who wasn’t paying attention! When I’m in a rush I always get this tunnel vision and just can’t notice my surroundings. Anyway, that’s not important. This flyer… Are you thinking about joining the ESGARSI?"
 
     mc "Uh… I, I don’t know. This flyer kind of makes me think this is the place I was looking for, but…"
 
@@ -191,15 +194,17 @@ label start:
     mc "It’s great! I love it! But other than that it feels like a too formal club, I don’t think I’m smart enough for it…"
 
     "???" "No! Don’t say that! It is true that the boss takes it very seriously and is always thinking about academic stuff, but she never forces anyone to be as involved if they don’t want to."
-    "???" "Just the opposite, everybody is really nice there, and there’s nobody who isn’t smart enough to join us! That’s our thing! There’s so many people in uni trying to discourage people, telling them they are not worth enough… And that’s not true! We help give people the small push they need to really start thinking. So, please, don’t dare call yourself stupid!"
-    #la de arriba tambien se pasa
+    "???" "Just the opposite, everybody is really nice there, and there’s nobody who isn’t smart enough to join us!"
+    "???" "That’s our thing! There’s so many people in uni trying to discourage people, telling them they are not worth enough… And that’s not true! We help give people the small push they need to really start thinking. So, please, don’t dare call yourself stupid!"
+
     "Such kindness… I gave him my most honest smile back. Why can’t I find people like him in my class?"
 
-    mc "W-well, thank you. I’ll consider it. To be honest, I was a bit creeped out by this, there was this weird but smart looking professor that liked to talk a lot…"
+    mc "W-well, thank you. I’ll consider it. To be honest, I was a bit creeped out by this... There was this weird but smart looking professor that liked to talk a lot…"
 
     "???" "Oh, yes, Professor Nabradia. A bit of a peculiar guy, but he’s probably the smartest person I know."
-    "???" "And the ESGARSI would not be able to exist without him! Well, I guess I gave you quite the monologue too… For all that talk I’m actually just quite new there, and not great at academic stuff either, I’m much better at the arts, so it would be great to have someone like me in there."
-    #se pasa
+    "???" "And the ESGARSI would not be able to exist without him! Well, I guess I gave you quite the monologue too…"
+    "???" "For all that talk I’m actually just quite new there, and not great at academic stuff either, I’m much better at the arts, so it would be great to have someone like me in there."
+    
     "???" "Oh, by the way, I haven’t introduced myself! I’m Z’enyth, a first year in Fine Arts, but you can call me Zen. We have a meeting today, so it’d be great if you could come by, it’s open to everybody, no need to commit yet!"
 
     mc "Thanks, I’m %(povname)s. I guess I’ll come by, but now I should be getting back to class."
