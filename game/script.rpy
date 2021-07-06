@@ -11,15 +11,34 @@ define eyeopen = ImageDissolve("eyesopen.jpg", 1.5, 100)
 define eyeclose = ImageDissolve("eyesopen.jpg", 1.5, 100, reverse=True)
 define genderflag = False
 define s = "s"
-
+define povname = ""
+define povsurname = ""
 # The game starts here.
 
 label start:
     #INICIO ESCENA 1
-    $ povname = renpy.input("Your name") #Cambiar la forma de introducir el nombre
-    $ povname = povname.strip()
-    $ povsurname = renpy.input("Your surname")
-    $ povsurname = povsurname.strip()
+    screen nombre():
+        frame:
+            xalign 0.5 ypos 50
+            vbox:
+                text "Enter your name"
+                input default "Name":
+                    value VariableInputValue("povname")
+                textbutton "Continue" action Return(True)
+    screen apellido():
+        frame:
+            xalign 0.5 ypos 50
+            vbox:
+                text "Enter your family name"
+                input default "Last Name":
+                    value VariableInputValue("povsurname")     
+                textbutton "Continue" action Return(True)           
+    call screen nombre() 
+    call screen apellido()                 
+    #$ povname = renpy.input("Your name") #Cambiar la forma de introducir el nombre
+    #$ povname = povname.strip()
+    #$ povsurname = renpy.input("Your surname")
+    #$ povsurname = povsurname.strip()
     menu gender:
         "Choose your pronoun"
         "He/him":
