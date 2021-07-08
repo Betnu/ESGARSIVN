@@ -3,6 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+
 define mc = Character("[povname]", color="#ffffff")
 define zach = Character("Prof. Nabradia", color="#800080")
 define zen = Character("Z’enyth", color="#ff0000")
@@ -218,13 +219,15 @@ label start:
     #INICIO ESCENA 3
 
     "The remaining classes went through pretty easily too, with the biggest problem being me getting too distracted thinking about this ESGARSI thing."
-    "I was lucky to have met Z’enyth, because the flyer, unlike what professor Nabradia told me, definitely didn’t have all the information I needed. Professor Nabradia… An interesting fellow, I didn’t get to ask him what he teaches."
-    #Cambiar la de arriba creo 
+    "I was lucky to have met Z’enyth, because the flyer, unlike what professor Nabradia told me, definitely didn’t have all the information I needed."
+    "Professor Nabradia… An interesting fellow, I didn’t get to ask him what he teaches."
+   
     "Maybe I’ll get to have him in one of my subjects. Anyway, classes have ended, so I should go check out the ESGARSI’s meeting room. I’m a bit nervous."
 
     "As I got out of classes I headed to the Faculty of History, where their meeting room is supposed to be. It’s a big, old building, built in stone and with an air of majesty."
-    "It’d certainly be nice to come to a place like this regularly without the worries I’d have if I studied here. The problem it has is that, old as it is, its corridors are labyrinthic and it’s poorly indicated where each classroom is supposed to be. It’s a bit embarrassing, but I guess I have no other option than asking someone where the meeting room is. I approached one of the students in the main corridor."
-    #cambiar la de arriba
+    "It’d certainly be nice to come to a place like this regularly, without the worries I’d have if I studied here. The problem is that old as it is, its corridors are labyrinthic and poorly indicated."
+    "It’s a bit embarrassing, but I guess I have no other option than asking someone where the meeting room is. I approached one of the students in the main corridor."
+
     mc "E-excuse me. Do you know where I could find this classroom…?"
 
     "He turned around and stared down at me. He already had a pretty scary face, but it only got worse when he saw the piece of paper I was holding."
@@ -233,17 +236,21 @@ label start:
 
     mc "I-I’m thinking about joining, so I wanted to check them up…"
 
-    "Rude man" "Oh, so they managed to get another one. You must not be very smart then, right? What do you plan to do then? Going to conferences to waste all of our time? *chuckle* Pathetic."
+    "Rude man" "Oh, so they managed to get another one. You must not be very smart then, right? What do you plan to do then? Going to conferences to waste all of our time? Hah, pathetic."
 
-    "I didn’t know what to answer. I don’t really know anything about what they do, but this doesn’t sit right with me, that’s just not how you should treat anybody… I wanted to tell him something, but my mouth opened only for my voice to not come out."
-    "Well, maybe he’s right after all, I don’t know anything about these people. I must have been fooled into joining some fishy organisation… I can’t believe I’ve been so stupid once again, why do I even keep trying? But that Z’enyth guy seemed really sweet… would he really want to swindle someone? I-I-I"
-    #cambiar el de arriba
-    "Rude man" "What’s the matter, cat got your tongue? Or is it that you don’t have anything good to say about your new friends, because there’s nothing? Hey, guys! A new member for that EMGARZI bullshit! Look at %(povpronoun2)s, they didn’t seem to have got a bright one this time either."
-    #cambiar el de arriba
-    "The few people around started staring at me, some of them chuckling. This… this can’t be ok, it doesn’t matter what kind of people they are, why should they be humiliated… And why am I the one being humiliated, I haven’t even joined, he knows, I told him."
-    #cambiar el de arriba
-    "I… As I was starting to tear up, I saw something approaching from the corner of my eye. It was a young, white haired man, wearing some traditional japanese-looking clothes and a huge sheath on his back. He got closer to us, and as soon as he saw me almost crying he stared angrily at the rude man."
-    #cambiar el de arriba
+    "I didn’t know what to answer. I don’t really know anything about what they do, but this doesn’t sit right with me, that’s just not how you should treat anybody… I wanted to tell him something, but my mouth opened only for my voice not to come out."
+    "Well, maybe he’s right after all, I don’t know anything about these people. I must have been fooled into joining some fishy organisation…"
+    "I can’t believe that, once again, I’ve been so stupid. Why do I even keep trying? But that Z’enyth guy seemed really sweet… would he really want to swindle someone? I-I-I"
+   
+    "Rude man" "What’s the matter, cat got your tongue? Or is it that you don’t have anything good to say about your new friends, because there’s nothing?"
+    "Rude man" "Hey, guys! A new member for that EMGARZI bullshit! Look at %(povpronoun2)s, they didn’t seem to have got a bright one this time either."
+    
+    "The few people around started staring at me, some of them chuckling."
+    "This… this can’t be ok, it doesn’t matter what kind of people they are, why should they be humiliated… And why am I the one being humiliated, I haven’t even joined, he knows, I told him."
+    
+    "I… As I was starting to tear up, I saw something approaching from the corner of my eye. It was a young, white haired man, wearing some traditional japanese-looking clothes and a huge sheath on his back."
+    "He got closer to us, and as soon as he saw me almost crying he stared angrily at the rude man."
+    
     show betnu angry at left
     "???" "…"
     #if genderflag == False:
@@ -251,7 +258,7 @@ label start:
     #else:
         #"Rude man" "What do you want? I’m just telling someone off because %(povpronoun1)s deserve it, so please, leave me alone."
 
-    "???" "*sigh*"
+    "???" "{i}*sigh*{/i}"
     show bg tableros with vpunch
     "After sighing, the white-haired man quickly opened the sheath he was carrying, dropping it as he took his weapon out, immediately striking our impolite fellow."
     "I closed my eyes, scared at how fast this escalated, and when I opened them I found that this rude guy had fallen on the ground while the white-haired man had his hand up in the air, completely empty, and started laughing."
@@ -259,17 +266,19 @@ label start:
 
     "Rude man" "Y-you guys are just doing this because you aren’t able to back your ideas up with words. P-pathetic."
     hide rudeman with moveoutright
-    "He got up on the floor and hurried away. The same people that seconds before were laughing at me were now giggling at him. The white-haired man turned around to face me, with a big smug grin. He stared at the flyer I was holding in my hands, pointed at it, then pointed at himself and gave me a thumbs up."
-    #cambiar el de arriba
-    mc "O-oh. Thank you so much, that guy seemed dangerous… A-are you an ESGARSI member? I was trying to look for the meeting room."
+    "He got up on the floor and hurried away. The same people that seconds before were laughing at me were now giggling at him."
+    "The white-haired man turned around to face me, with a big smug grin. He stared at the flyer I was holding in my hands, pointed at it, then pointed at himself and gave me a thumbs up."
+    
+    mc "O-oh. Thank you so much, that guy seemed dangerous… A-are you an ESGARSI member? I was looking for the meeting room."
     show betnu happy at center
     "He nodded, pointed upwards and raised three fingers."
 
     mc "Huh? What does that mean, second floor class 3?"
 
-    "After hearing my question he just shrugged and turned back, walking off to probably change back to his normal clothes. There are some weird people in this ESGARSI thing, but they all seem to be nice, I guess I’ll see him at the meeting if he truly was a member..."
+    "After hearing my question he just shrugged and turned back, walking off to probably change back to his normal clothes."
+    "There are some weird people in this ESGARSI thing, but they all seem to be nice. I guess I’ll see him at the meeting if he truly was a member..."
     hide betnu moveoutright
-    #cambiar el de arriba
+   
     #FIN ESCENA 3
 
     #INICIO ESCENA 4
@@ -288,15 +297,17 @@ label start:
 
     mc "I-I’m so sorry, I didn’t want to offend you, I just saw the flyer earlier today, and met some of the members an-and thought I could come to the meeting, b-but I didn’t know I’d be such an inconvenience I’m so sorryyyyyyyyyyy"
 
-    "I gave my deepest bow of apology, almost starting shaking. You idiot, many times can I screw up in a day? However, when I said that her face immediately softened, and the stern stare she wore became of regret."
+    "I gave my deepest bow of apology, almost starting to shake. You idiot, how many times can you screw up in a day?" 
+    "However, when I said that her face immediately softened, and the stern stare she wore became one of regret."
     show gwyn
-    "Boss" "Oh no, no, no, no, no. I’m sorry, I’m the one that’s sorry. We’re just used to getting people with not so nice intentions. But oh, please, don’t get scared, it’s usually a pretty nice place, it’s just that there’s rude people everywhere, right? But we would love to have you with us!"
-    #cambiar esta
-    "She gave me a quite awkward smile, realising her mistake and not really knowing how to get out of the situation. After all the tension accumulated today I couldn’t help but chuckle."
+    "Boss" "Oh no, no, no, no, no. I’m sorry, I’m the one that’s sorry. We’re just used to getting people with not so nice intentions."
+    "But oh, please, don’t get scared, it’s usually a pretty nice place, it’s just that there’s rude people everywhere, right? But we would love to have you with us!"
+    
+    "She gave me quite an awkward smile, realising her mistake and not really knowing how to get out of the situation. After all the accumulated tension from today I couldn’t help but chuckle."
 
-    mc "It’s fine, it’s fine. There was a lot happening today, but I met that Professor Nabradia guy, Z’enyth, and a white haired kendo club member that I think is also a member here and they all seemed nice."
+    mc "It’s fine, it’s fine. There was a lot happening today, but I met that Professor Nabradia guy, Z’enyth, and a white haired kendo club member that I think is also a member here, and they all seemed nice."
 
-    "Boss" "They all seemed nice? Even…? Nevermind, I’m glad you had a good impression. That’s actually all of us, the three official members: Z’enyth, betnu, and me, Gwyneth Purrsen. And of course, Zach, our… benefactor."
+    "Boss" "They all seemed nice? Even…? Nevermind, I’m glad you had a good impression. That’s actually all of us, the three official members: Z’enyth, Betnu, and me, Gwyneth Purrsen. And of course, Zach, our… {i}benefactor{/i}."
 
     "She said that last word under her breath, clenching her teeth."    
 
@@ -306,23 +317,27 @@ label start:
 
     "My voice started breaking a bit. She looks like a smart person, really invested in her club, and I… Well, there’s no way of denying the truth."
 
-    mc "I’m not very smart, and academically… I had a very rough start, almost dropped out. I’m constantly told by the teachers that I’m not going to achieve anything at this rate… I don’t think I would be of much help to a place like this…"
+    mc "I’m not very smart, and academically… I had a very rough start, almost dropped out. I’m constantly being told by the teachers that I’m not going to achieve anything at this rate… I don’t think I would be of much help to a place like this…"
 
     "Gwyneth gave me a stern look again, but this time she wasn’t looking down on me. She was serious, even angry, but not the kind of anger directed at me."
-    #cambiar la de abajo
-    gwyn "Do you know what we do here? We talk about things that are considered truth. Immutable, unshakable. The pillars of knowledge everything rests on. And we try to deny them. But don’t get it wrong, it isn’t a mere exercise of denial, but a struggle against power. "
+    
+    gwyn "Do you know what we do here? We talk about things that are considered to be the truth. Immutable, unshakable. The pillars of knowledge everything rests on. And we try to deny them."
+    gwyn "But don’t get it wrong, it isn’t a mere exercise of denial, but a struggle against power. "
     gwyn "We take the truths that people in power have built their castles on, where they rest, unmovable, rejecting any discussion so they can comfortably keep their positions, not letting knowledge advance, and we take those truths down." 
-    gwyn "It’s only when discussion is truly open for everybody to participate that knowledge will truly advance. And not only knowledge. It is our dream to level it down so the elitism and mysticism of academia disappears, to make people realise that everybody can think, everybody can have good ideas."
-    #cambiar la de arriba
+    gwyn "It’s only when discussion is truly open for everybody to participate in that knowledge will truly advance."
+    "And not only knowledge. It is our dream to level it down so the elitism and mysticism of academia disappears, to make people realise that everybody can think, everybody can have good ideas."
+    
     "She looked at me dead in the eye and smirked." 
 
     gwyn "Do you know why some professors have been questioning your worth instead of helping you and boosting your confidence?" 
-    gwyn "It’s all for the same reason. You can only be on top when you have people below you. They call themselves an elite, but are just a bunch of bullies. And I can assure you, you’re not dumb, you’re not stupid, you just haven’t been taught the proper way, because that wouldn’t be good for them. But we’ll accept your opinions here." 
+    gwyn "It’s all for the same reason. You can only be on top when you have people below you. They call themselves an elite, but are just a bunch of bullies."
+    gwyn "And I can assure you, you’re not dumb, you’re not stupid, you just haven’t been taught in the proper way, because that wouldn’t be good for them. But we’ll accept your opinions here." 
     #cambiar la de arriba
     gwyn "Your alleged inferiority is the fake truth they build their thrones on. And that’s the kind of fake truth we are ready to take down at any moment!"
 
     "As she said this, she seemed so bright, so dazzling… And not only her. Z’enyth, who offered me his kindness. Betnu, who came to help me even before realising the fight was about the ESGARSI."
-    "I know I won’t be of much help, but… Maybe I can change. That’s the reason I came back, isn’t it? This is the place I want to be in. A tear fell off my cheek, this time a happy one. I don’t even need the meeting, I want to join!"
+    "I know I won’t be of much help, but… Maybe I can change. That’s the reason I came back, isn’t it? This is the place I want to be in."
+    "A tear fell off my cheek, this time a happy one. I don’t even need the meeting, I want to join!"
 
     "While I was thinking this, someone knocked on the half open door, showing his face with an apologetic look."
     show zen at left
@@ -331,7 +346,7 @@ label start:
     "I nodded."
     show betnu at right
     "Betnu came in after him. The meeting wasn’t much of a meeting, they just wanted to know me a little better, and also talked about themselves and what they do. And when I say they, I mean Z’enyth and Gwyneth, as Betnu just stayed quiet, smiling."
-    "I think he might be unable to speak. We just had a nice talk and then left, planning to also meet on another day. Guess that makes me an official member now. I wonder what will happen from now on, but for the first time in a long time, I had hope."
+    "I think he might be unable to speak. We just had a nice talk and then left, planning to also meet on another day. Guess that makes me an official member now. I wonder what will happen from now on, but for the first time in so long, I had hope."
 
     #FIN ESCENA 4
     # This ends the game.
