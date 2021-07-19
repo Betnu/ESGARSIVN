@@ -206,7 +206,8 @@ label start:
     "???" "And the ESGARSI would not be able to exist without him! Well, I guess I gave you quite the monologue too…"
     "???" "For all that talk I’m actually just quite new there, and not great at academic stuff either, I’m much better at the arts, so it would be great to have someone like me in there."
     
-    "???" "Oh, by the way, I haven’t introduced myself! I’m Z’enyth, a first year in Fine Arts, but you can call me Zen. We have a meeting today, so it’d be great if you could come by, it’s open to everybody, no need to commit yet!"
+    "???" "Oh, by the way, I haven’t introduced myself! I’m Z’enyth, a first year in Fine Arts, majoring in music, but you can call me Zen."
+    "???" "We have a meeting today, so it’d be great if you could come by, it’s open to everybody, no need to commit yet!"
 
     mc "Thanks, I’m %(povname)s. I guess I’ll come by, but now I should be getting back to class."
 
