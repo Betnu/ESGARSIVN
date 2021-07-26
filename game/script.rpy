@@ -350,6 +350,201 @@ label start:
     "I think he might be unable to speak. We just had a nice talk and then left, planning to also meet on another day. Guess that makes me an official member now. I wonder what will happen from now on, but for the first time in so long, I had hope."
 
     #FIN ESCENA 4
+
+    #INICIO ESCENA 5
+
+    "It’s been a week since I’ve joined the ESGARSI. With everybody’s schedules being so busy, we haven’t been able to meet again, but today is finally the day!" 
+    "Classes aren’t going great, I’m still lost over quite a few things, but it’s become more bearable. And the feelings of expectation for today have certainly helped make it so."
+    "With that said, my last class for the day just finished, so it’s time to get to the club!"
+    "Excited, I hurried to the Faculty of History. There are voices coming from the inside, so I guess everybody got here faster than me."
+    "As soon as I opened the door, I was greeted by some silly discussion, which seemed to be giving poor Z’enyth a bit of distress."
+    show gwyn at right
+    show zen at left
+    gwyn "And what if the Moon isn’t real?"
+    zen "W-whaaat? How could the Moon not be real? It’s always up there!"
+    gwyn "Just a hologram."
+
+    zen "Just a-? No, no, no, I don’t think that’s right. We got up there, after all! Well, not we as in *us*, I meant we as in, you know…"
+
+    gwyn "Those pictures were also a hologram."
+
+    zen "Ok that’s some conspiracy talk you’re doing right now, I’m not falling for that."
+    show gwyn solemne at right
+    gwyn "Ah, I see, you call it a conspiracy and expect to just close the conversation like that, no proof given."
+    gwyn "That’s some really cheap strategy, Zen."
+    gwyn "To think you would stoop so low… It’s really easy to accept everything you’ve been told, without putting any thought into it, but at the moment of truth you realise you don’t actually have any arguments, and have no choice but to resort to telling empty words."
+    zen "I… uh, I never thought about it like that. You’re right, I haven’t been thinking. And there’s a lot of weird things about the Moon, so maybe…"
+
+    "Quicker than my eyes could say, Zen received a flick on the forehead."
+
+    zen "Aw!"
+    show gwyn smirk at right
+    gwyn "Bad thinking there, Zen."
+    zen "Why was it exactly this time? I thought all that about the Moon was… not true, at least, but your talk after that…"
+    gwyn "No, that was all bullshit."
+    zen "Everything? Even the…"
+    gwyn "Everything. Utter, complete rubbish, from start to finish. And what’s worse, you were completely aware, at least at the start. You are just too weak to pressure, Zen, need to work on that. And now, the next question: Is gravity real?"
+    "An eraser flew across the room, until it hit Gwyneth’s head. I looked to the direction it came from, and I found Betnu smiling confidently."
+    show betnu smirk at center
+    betnu "…"
+    "Gwyneth was wincing slightly because of the hit, but she seemed to have taken the joke well, since she was laughing."
+    gwyn "Ok, ok, I concede that one. That was a painfully convincing argument."
+    "At this moment, she turned towards the door, seeing me standing there."
+    hide betnu
+    gwyn "Oh, %(player_name)s, how long have you been waiting there? We were so engrossed in our dumb game we didn’t notice you were, I’m so sorry. But still, next time just tell us, you don’t need to act shy with us."
+    mc "Oh, no. I was interested in the conversation myself, it looked like it would be a pity to interrupt. But I-I’ll take that into consideration, thank you. But, huh, what- what were you doing?"
+    gwyn "I thought we could just take it easy today, so we’re playing some silly games that let our reasoning skills not get rusted. Right now, I was doing my best to try and deny things that very obviously exist while the other two tried to counter-argument. Do you want to try? For example… hm.... Betnu doesn’t exist!"
+    "I quickly looked behind me, where Betnu was supposed to be. There was nothing over there. I guess he must have moved quickly… I turned around quickly, looking all over the small room, but there was nothing. Oh no, it can’t be… or can it?"
+
+    DecA.betnuexist: Betnu does not exist!
+    DecB.fool: P-please, don’t try to fool me
+
+DecA.betnuexist
+
+    "I looked at Gwyneth with horror. It was the only explanation"
+    mc "H-have I just been hallucinating…? Betnu truly does not exist!"
+
+DecB.fool
+
+    "No, of course it can’t. I’m sure he’s just hiding somewhere…"
+    mc "P-please, don’t try to fool me."
+    show gwyn smirk at right
+    gwyn "Oh, good, I like that. But if you are trying to defy me, you better give me some proof."
+    mc "I d-don’t have any…"
+#comun
+    "This time it was me who got a flick on the forehead. Even though it was quick and precise, it was actually completely harmless."
+    gwyn "Bad thinking. Come on, give me a more proper answer, where could he be?"
+    mc "I-I have no idea… he’s just gone! And the door is closed!"
+    "Gwyneth sighed and pointed towards the table."
+    gwyn "Isn’t it obvious? He…"
+    zen "Became the table!"
+DecA.betnuexist
+
+    "As soon as Z’enyth said those words Betnu quickly jumped from below the table, trying to put on a scary face, just before bursting into laughter."
+    show betnu scary face at center
+    show betnu laugh at center
+    betnu "…"
+    "Gwyneth and Z’enyth were laughing too. It felt a bit embarrassing, but they seemed to be having fun so it was ok, especially Betnu."
+    "But, even though Gwyneth was laughing it looked like she would have wanted me to figure it out, even if it was a dumb joke. While I was thinking that, Betnu, who still hadn’t completely stopped laughing, even when the others already did, gave me a thumbs up."
+    betnu …
+    "Well, he sure looks happy to have pulled it off, so I guess it’s fine."
+DecB.fool
+
+    mc "No he didn’t!"
+    "When Gwyneth pointed towards the table, I finally realised it, his shoes were showing below the table."
+    mc "He’s just under the table, you can see his shoes if you pay attention. But he’s really good at hiding, I would never have found him by myself…"
+    show betnu dissapointed at center
+    "When I said that, Betnu slowly came out of his hiding spot. He seemed really disappointed, I bet he was really looking forward to pulling it off. And it was so close too…"
+    gwyn "That was a pretty good attitude to start with, but you need to polish it a lot more. And that’s what we’re here for."
+    "Ahhhhh, I was so close. But still, she liked it, I’m starting to feel a bit better, even if it was all pretty silly. Poor Betnu, however… I’m kinda feeling bad, if I had known he wanted to pull this off so much I may have played along with him."
+#comun
+    gwyn "Well, I’ve been doing this for too long, now please, it’s time for someone else to take the lead. Come on, Zen, make a proposal and have us refute it."
+    zen "Hm… what can I say, what can I say…"
+    "He seems to be taking a lot of time thinking, maybe he’s not too good at this, or doesn’t fare too well under pressure."
+    zen "Ah! I know! I don’t think the concept of language as we understand it today has a solid ontological basis. Understanding a language as a single structured unity mutable only under normative changes is nothing but an open pathway for linguistic colonialism."
+    gwyn "…"
+    betnu "…"
+    mc "…"
+    gwyn "That was… pretty smart, actually. I was thinking of this exercise to be more like a game, but now that you talk about that I’m currently working on a very similar proposition th-"
+    show zen grin at left
+    zen "I know! I read it when you left your notes here, it’s pretty interesting!"
+    "Gwyneth let out a big sigh."
+    gwyn "Fine, fine, I’ll let it slide for now, but next time come up with your own."
+    zen "You know I’m much better at practical stuff… But I’ll try to do my best! Oh, yeah, I’ve been thinking about how music genres have changed so much and have so many different ramifications and subdivisions that the concept of genres is kinda losing its meaning, maybe you could help me write something about that?"
+    gwyn "Sure! I’ll be checking for free time in my schedule and I’ll let you know when I have some time. That’s actually pretty interesting and connects with a theory that…"
+    show betnu shrug at center
+    "While the two of them kept talking about that, Betnu, who was apparently understanding as little as me about the conversation, looked at me and shrugged."
+    show betnu at center
+    betnu "…"
+    "I couldn’t help but chuckle. I’m not sure about whatever we are doing here, but they seem to be fun people."
+    gwyn "Oh, sorry, we got a bit carried away here. So, %(player_name)s, what do you think of how we work here?"
+    "Of how they work here? She means those silly games? Well, actually…"
+DecA.dumbgames
+
+    mc "Well… I-I don’t think these games are actually of much help. I-I mean, it s-sure is fun, but… If we want to learn how to argue, shouldn’t we learn more proper things?"
+    "Gwyneth smirked as soon as she heard me complain."
+    gwyn "Oh, we got a defiant one, huh. I like it."
+    gwyn "I am, however, hoping to change your mind. Why must academic things always be so serious and self-important? Is having fun not allowed?"
+    gwyn "Of course, doing proper research and putting up some good amounts of studying is important, but I think it’s equally important to be able to take things lightly. To see that what we are doing isn’t all that serious as people make it to be. A lot of academic talks are actually just like these games, including the ones I love so much. Just a bunch of people just talking bullshit, trying to feel important. Only difference is that we aren’t allowed to have a laugh in those."
+    "Is that so? I’ve always seen my studies as something incredibly serious, and the professors certainly seem to take it that way too… The professors… Maybe they are not the best example, at least not the one I want to follow. Maybe she’s right after all, I just should relax more."
+
+DecB.lovelearning
+
+    mc "T-there’s still a lot of things I don’t get, but I really enjoy learning new things!"
+    zen "I know, right? I also have trouble trying to understand what the boss and Professor Nabradia talk about sometimes, but that feeling of finally getting something… It’s just the best!"
+    "When he puts it like that, and with such a bright smile, you just can’t avoid getting confident. I wonder if I’ll be able to have an attitude like that too."
+    gwyn "I’m glad you’re enjoying it. These games are really fun and even if they don’t look like it they help improve our communication abilities. But please, don’t forget that doing proper research and studying are equally important. And also, if you ever feel stressed by complicated-sounding academic talk, don’t forget that it’s actually very similar to games like this. The things Zen and I were talking about seemed complicated and important, and so do the big talks and conferences professors give."
+    gwyn "But in the end, we’re all just a bunch of idiots talking bullshit, trying to feel important."
+
+    "Is that so? Maybe looking at it like that things aren’t as intimidating as I thought. And even Z’enyth, who looks pretty competent, has his fair share of trouble too… I still have trouble with a lot of things, but I feel like I can do this!"
+
+DecC.gamesbefun
+
+    mc "I-I’m barely understanding anything, but it just looks like a lot of fun!"
+    "Betnu poked my shoulder, and when I looked at him he gave me a thumbs up, smiling."
+    betnu "…"
+    "I replied with just a nod, also smiling. He seems to be such a fun, easygoing person… How does it feel to be so free, doing whatever you enjoy, having no fear or shame? I’m a bit jealous, but when I’m here, I feel like I can do more than usual. Maybe I can change too."
+    gwyn "Yes, playing these games can be a lot of fun, but please, and I say this to both of you, don’t neglect your studies. There’s a lot of things that change when we change our perspective of it. For example, academic talks and conferences seem really intimidating, with people saying big words and feeling oh-so-important. But the truth is, those things are just like these games, including all those complicated things Zen and I were talking about before. Just a bunch of idiots talking bullshit just to feel more important. If you understand the rules of the game and learn a few words, everybody can play too."
+    "I see… I just have to look at academic stuff the same way I look at these games? I’m sure that won’t make the actual studying easier, but it can give me some motivation. I want to participate in this with everybody after all! Yes, I’ll just keep trying my best!"
+
+#comun
+    zen "Changing the topic, having new members feel so nice, everything is so lively now. Thanks for joining us, %(player_name)s!"
+    "Aw, he’s making me blush. Heh heh, I know it just means that he likes to be around people, nos specifically me, but still, it’s nice to feel welcome for once."
+    mc "Y-yeah, it would be nice if we could gather more people…"
+    zen "Yes! It’s something I never really thought about, but it would be nice. Problem is, we don’t exactly have the best reputation as of now… I wonder if there was something we could do to make people interested."
+    gwyn "Oh, I know! We could have Zen end all his sentences with nya! People seem to be really into that lately."
+    "Z’enyth ending his phrases with nya… That would certainly be interesting."
+    zen "What? Why would I do that? That would just be embarrassing, in any case people would run away from our club even more than they do now!"
+    gwyn "Are you sure it’s not just you who’s running away? From your destiny, that is."
+    zen "I am fairly sure! Don’t try to turn this around with your over-dramatic words, I’m not doing it!"
+    betnu "Nya, nya, nya, nya, nya!"
+    "Huh? What was that? Can he talk after all? Maybe he’s just able to repeat easy sounds, but has trouble making sentences… In any case, I need to position myself. Having him say nya is very interesting, but… is it really ok to pressure him into that?"
+DecA.nya
+
+    "No, I have to follow my feelings. Following Betnu is the correct decision here!"
+    mc "Nya, nya, nya, nya, nya!"
+    "Z’enyth looked a bit frustrated, but… Not in an actually angry way? I’m sure he actually wants to say it…"
+    zen "I-I’m not doing it."
+    gwyn "Awwww, come onnnn, are you too serious and formal to do it, nya? Are you too old for these things, you university guy, nya?"
+    betnu "…"
+    betnu "…"
+    betnu "… nya"
+    mc "C-come on, do it, nya, nya!"
+    "He looked like he couldn’t hold it in anymore. We got him through the breaking point!"
+    zen "I would never say that, nya!"
+    "A few seconds after saying it, his face changed to a shocked expression. Did he say it without realising? But after seeing everyone’s friendly smiles, with no sign of mockery anymore, and after making sure he hadn’t died for saying nya, he changed back to a smile."
+    zen "I don’t really think doing this will attract any member, nya!"
+    gwyn "Ehhhh? But it’s so cute, nya!"
+    zen "And if it did, I’m not sure we would want them in, nya!"
+    "At this point, we just burst out in laughter. We may not be doing real club stuff, but being here is so nice..."
+
+DecB.protecc
+
+    "Z’enyth has always been so nice to me, it’s time to repay it!"
+    mc "P-please, stop with the bullying! Don’t you see he doesn’t want to say it?"
+    zen "T-thank you, we are lucky to have someone sensible here…"
+    "He looked down as he said that. Those may have been those words, but he looked disappointed. Could it be… he actually wanted to say that but was just too embarrassed? There was an awkward silence after that. Looking tired of it, Gwyneth put her hand under her own chin, as if she was trying to look interesting, and got close to Z’enyth, moving her arm around his shoulder."
+    gwyn "Ah, you’re right, it was wrong of us to try and force you, Zen-nya… After all, no member of this prestigious organisation would stoop to that point, nya."
+    "Betnu, while nodding, also started grabbing his chin, while putting the other arm around his friend’s shoulder."
+    betnu "..."
+    betnu "…"
+    betnu "… nya."
+    zen "G-geez! Stop with that, I’m nyat saying that!"
+    "Betnu and Gwyneth immediately grinned after hearing that. I couldn’t hold back a giggle either. He looks so embarrassed, but I guess he actually did want to say that."
+
+#comun
+
+    "After this bout of silliness, Gwyneth looked at the clock and called our attention to it. Time really had passed faster than I thought."
+    gwyn "Oh, look at the time! Ah… it’s so late, I’m going to have to call it a day. Well, I really enjoyed today’s meeting, if we can call it that. %(player_name)s, I hope you had fun too!"
+    mc "I-I did, thank you! Will we be meeting next week at the same time?"
+    gwyn "Oh, I almost forgot! There’s a festival in town next week, so we could all go together as next week’s club activity."
+    "I’m not sure going out for fun counts as a club activity, but I’m also not sure I care."
+    mc "Sure! It sounds fun!"
+    zen "Yes, it’s been so long since we did anything together, and it can serve as a celebration for our new member!"
+    betnu "…"
+    gwyn "In that case, see you then!"
+    "And just like that, the day ended. I… I’ve been invited. To go out. With friends. Not exactly friends. I’m still just a newcomer from their club. But still. Invited. They could have gone by themselves as friends. But I’m invited. %(player_name)s, today’s been a victory for you! My new university life is just getting better!"
+
     # This ends the game.
     #c "%(player_name)s hijo de puta"
     return
