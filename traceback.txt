@@ -1,34 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 35, in script
-    call screen inicio()
-  File "renpy/common/000statements.rpy", line 569, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-Exception: Screen inicio is not known.
-
+  File "game/script.rpy", line 425, in script
+    if betnuexiste == "b" :
+  File "game/script.rpy", line 425, in <module>
+    if betnuexiste == "b" :
+NameError: name 'betnuexiste' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 35, in script
-    call screen inicio()
-  File "renpy/ast.py", line 2009, in execute
-    self.call("execute")
-  File "renpy/ast.py", line 1997, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "renpy/statements.py", line 278, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 569, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "renpy/exports.py", line 3052, in call_screen
-    show_screen(_screen_name, _transient=True, *args, **kwargs)
-  File "renpy/display/screen.py", line 1115, in show_screen
-    raise Exception("Screen %s is not known.\n" % (name[0],))
-Exception: Screen inicio is not known.
-
+  File "game/script.rpy", line 425, in script
+    if betnuexiste == "b" :
+  File "renpy/ast.py", line 1892, in execute
+    if renpy.python.py_eval(condition):
+  File "renpy/python.py", line 2249, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "renpy/python.py", line 2242, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 425, in <module>
+    if betnuexiste == "b" :
+NameError: name 'betnuexiste' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.6.1693
 ESGARSI 1.0
-Tue Jul  6 16:01:23 2021
+Mon Jul 26 20:58:57 2021

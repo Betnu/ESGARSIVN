@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 27: u'call' is not a keyword argument or valid child for the button statement.
-    button action call screen apellido
-                      ^
+File "game/script.rpy", line 469: choice menuitem expects a non-empty block.
+    "I don't think these games are of much help...":
+                                                    ^
 
 Ren'Py Version: Ren'Py 7.4.6.1693
-Tue Jul  6 16:01:53 2021
+Mon Jul 26 20:54:34 2021

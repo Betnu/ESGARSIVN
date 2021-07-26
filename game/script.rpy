@@ -8,6 +8,7 @@ define mc = Character("[povname]", color="#ffffff")
 define zach = Character("Prof. Nabradia", color="#800080")
 define zen = Character("Z’enyth", color="#ff0000")
 define gwyn = Character("Gwyneth", color="#ffff00")
+define betnu = Character("Betnu", color="ffffff")
 define eyeopen = ImageDissolve("eyesopen.jpg", 1.5, 100)
 define eyeclose = ImageDissolve("eyesopen.jpg", 1.5, 100, reverse=True)
 define genderflag = False
@@ -391,45 +392,50 @@ label start:
     gwyn "Ok, ok, I concede that one. That was a painfully convincing argument."
     "At this moment, she turned towards the door, seeing me standing there."
     hide betnu
-    gwyn "Oh, %(player_name)s, how long have you been waiting there? We were so engrossed in our dumb game we didn’t notice you were, I’m so sorry. But still, next time just tell us, you don’t need to act shy with us."
+    gwyn "Oh, %(povname)s, how long have you been waiting there? We were so engrossed in our dumb game we didn’t notice you were, I’m so sorry. But still, next time just tell us, you don’t need to act shy with us."
     mc "Oh, no. I was interested in the conversation myself, it looked like it would be a pity to interrupt. But I-I’ll take that into consideration, thank you. But, huh, what- what were you doing?"
     gwyn "I thought we could just take it easy today, so we’re playing some silly games that let our reasoning skills not get rusted. Right now, I was doing my best to try and deny things that very obviously exist while the other two tried to counter-argument. Do you want to try? For example… hm.... Betnu doesn’t exist!"
     "I quickly looked behind me, where Betnu was supposed to be. There was nothing over there. I guess he must have moved quickly… I turned around quickly, looking all over the small room, but there was nothing. Oh no, it can’t be… or can it?"
-
-    DecA.betnuexist: Betnu does not exist!
-    DecB.fool: P-please, don’t try to fool me
-
-DecA.betnuexist
+    menu:
+        "Betnu does not exist!":
+            $ flag_betnuexiste = "a"
+        "P-please, don’t try to fool me":
+            $ flag_betnuexiste = "b"
+            jump betnuexiste1
+#DecA.betnuexist
 
     "I looked at Gwyneth with horror. It was the only explanation"
     mc "H-have I just been hallucinating…? Betnu truly does not exist!"
-
-DecB.fool
-
+    jump comun1
+#DecB.fool
+    label betnuexiste1:
     "No, of course it can’t. I’m sure he’s just hiding somewhere…"
     mc "P-please, don’t try to fool me."
     show gwyn smirk at right
     gwyn "Oh, good, I like that. But if you are trying to defy me, you better give me some proof."
     mc "I d-don’t have any…"
 #comun
+    label comun1:
     "This time it was me who got a flick on the forehead. Even though it was quick and precise, it was actually completely harmless."
     gwyn "Bad thinking. Come on, give me a more proper answer, where could he be?"
     mc "I-I have no idea… he’s just gone! And the door is closed!"
     "Gwyneth sighed and pointed towards the table."
     gwyn "Isn’t it obvious? He…"
     zen "Became the table!"
-DecA.betnuexist
-
+    if flag_betnuexiste == "b" :
+        jump betnuexiste2
+#DecA.betnuexist
     "As soon as Z’enyth said those words Betnu quickly jumped from below the table, trying to put on a scary face, just before bursting into laughter."
     show betnu scary face at center
     show betnu laugh at center
     betnu "…"
     "Gwyneth and Z’enyth were laughing too. It felt a bit embarrassing, but they seemed to be having fun so it was ok, especially Betnu."
     "But, even though Gwyneth was laughing it looked like she would have wanted me to figure it out, even if it was a dumb joke. While I was thinking that, Betnu, who still hadn’t completely stopped laughing, even when the others already did, gave me a thumbs up."
-    betnu …
+    betnu "…"
     "Well, he sure looks happy to have pulled it off, so I guess it’s fine."
-DecB.fool
-
+    jump comun2
+#DecB.fool
+    label betnuexiste2:
     mc "No he didn’t!"
     "When Gwyneth pointed towards the table, I finally realised it, his shoes were showing below the table."
     mc "He’s just under the table, you can see his shoes if you pay attention. But he’s really good at hiding, I would never have found him by myself…"
@@ -438,6 +444,7 @@ DecB.fool
     gwyn "That was a pretty good attitude to start with, but you need to polish it a lot more. And that’s what we’re here for."
     "Ahhhhh, I was so close. But still, she liked it, I’m starting to feel a bit better, even if it was all pretty silly. Poor Betnu, however… I’m kinda feeling bad, if I had known he wanted to pull this off so much I may have played along with him."
 #comun
+    label comun2:
     gwyn "Well, I’ve been doing this for too long, now please, it’s time for someone else to take the lead. Come on, Zen, make a proposal and have us refute it."
     zen "Hm… what can I say, what can I say…"
     "He seems to be taking a lot of time thinking, maybe he’s not too good at this, or doesn’t fare too well under pressure."
@@ -457,19 +464,28 @@ DecB.fool
     show betnu at center
     betnu "…"
     "I couldn’t help but chuckle. I’m not sure about whatever we are doing here, but they seem to be fun people."
-    gwyn "Oh, sorry, we got a bit carried away here. So, %(player_name)s, what do you think of how we work here?"
+    gwyn "Oh, sorry, we got a bit carried away here. So, %(povname)s, what do you think of how we work here?"
     "Of how they work here? She means those silly games? Well, actually…"
-DecA.dumbgames
+    menu:
+        "I don't think these games are of much help...":
+            $ flag_juego = "a"
+        "I really like learning new things!":
+            $ flag_juego = "b"
+            jump juegob
+        "I may not get much, but I’m having a lot of fun!":
+            $ flag_juego = "c"
+            jump juegoc
 
+#DecA.dumbgames
     mc "Well… I-I don’t think these games are actually of much help. I-I mean, it s-sure is fun, but… If we want to learn how to argue, shouldn’t we learn more proper things?"
     "Gwyneth smirked as soon as she heard me complain."
     gwyn "Oh, we got a defiant one, huh. I like it."
     gwyn "I am, however, hoping to change your mind. Why must academic things always be so serious and self-important? Is having fun not allowed?"
     gwyn "Of course, doing proper research and putting up some good amounts of studying is important, but I think it’s equally important to be able to take things lightly. To see that what we are doing isn’t all that serious as people make it to be. A lot of academic talks are actually just like these games, including the ones I love so much. Just a bunch of people just talking bullshit, trying to feel important. Only difference is that we aren’t allowed to have a laugh in those."
     "Is that so? I’ve always seen my studies as something incredibly serious, and the professors certainly seem to take it that way too… The professors… Maybe they are not the best example, at least not the one I want to follow. Maybe she’s right after all, I just should relax more."
-
-DecB.lovelearning
-
+    jump comun3
+#DecB.lovelearning
+    label juegob:
     mc "T-there’s still a lot of things I don’t get, but I really enjoy learning new things!"
     zen "I know, right? I also have trouble trying to understand what the boss and Professor Nabradia talk about sometimes, but that feeling of finally getting something… It’s just the best!"
     "When he puts it like that, and with such a bright smile, you just can’t avoid getting confident. I wonder if I’ll be able to have an attitude like that too."
@@ -477,9 +493,9 @@ DecB.lovelearning
     gwyn "But in the end, we’re all just a bunch of idiots talking bullshit, trying to feel important."
 
     "Is that so? Maybe looking at it like that things aren’t as intimidating as I thought. And even Z’enyth, who looks pretty competent, has his fair share of trouble too… I still have trouble with a lot of things, but I feel like I can do this!"
-
-DecC.gamesbefun
-
+    jump comun3
+#DecC.gamesbefun
+    label juegoc:
     mc "I-I’m barely understanding anything, but it just looks like a lot of fun!"
     "Betnu poked my shoulder, and when I looked at him he gave me a thumbs up, smiling."
     betnu "…"
@@ -488,7 +504,8 @@ DecC.gamesbefun
     "I see… I just have to look at academic stuff the same way I look at these games? I’m sure that won’t make the actual studying easier, but it can give me some motivation. I want to participate in this with everybody after all! Yes, I’ll just keep trying my best!"
 
 #comun
-    zen "Changing the topic, having new members feel so nice, everything is so lively now. Thanks for joining us, %(player_name)s!"
+    label comun3:
+    zen "Changing the topic, having new members feel so nice, everything is so lively now. Thanks for joining us, %(povname)s!"
     "Aw, he’s making me blush. Heh heh, I know it just means that he likes to be around people, nos specifically me, but still, it’s nice to feel welcome for once."
     mc "Y-yeah, it would be nice if we could gather more people…"
     zen "Yes! It’s something I never really thought about, but it would be nice. Problem is, we don’t exactly have the best reputation as of now… I wonder if there was something we could do to make people interested."
@@ -499,7 +516,14 @@ DecC.gamesbefun
     zen "I am fairly sure! Don’t try to turn this around with your over-dramatic words, I’m not doing it!"
     betnu "Nya, nya, nya, nya, nya!"
     "Huh? What was that? Can he talk after all? Maybe he’s just able to repeat easy sounds, but has trouble making sentences… In any case, I need to position myself. Having him say nya is very interesting, but… is it really ok to pressure him into that?"
-DecA.nya
+    menu:
+        "Nya, nya, nya, nya, nya!":
+            $ flag_nya = "a"
+        "Please, don’t bully him!":
+            $ flag_nya = "b"
+            jump nya
+
+#DecA.nya
 
     "No, I have to follow my feelings. Following Betnu is the correct decision here!"
     mc "Nya, nya, nya, nya, nya!"
@@ -517,9 +541,9 @@ DecA.nya
     gwyn "Ehhhh? But it’s so cute, nya!"
     zen "And if it did, I’m not sure we would want them in, nya!"
     "At this point, we just burst out in laughter. We may not be doing real club stuff, but being here is so nice..."
-
-DecB.protecc
-
+    jump comun4
+#DecB.protecc
+    label nya:
     "Z’enyth has always been so nice to me, it’s time to repay it!"
     mc "P-please, stop with the bullying! Don’t you see he doesn’t want to say it?"
     zen "T-thank you, we are lucky to have someone sensible here…"
@@ -531,11 +555,10 @@ DecB.protecc
     betnu "… nya."
     zen "G-geez! Stop with that, I’m nyat saying that!"
     "Betnu and Gwyneth immediately grinned after hearing that. I couldn’t hold back a giggle either. He looks so embarrassed, but I guess he actually did want to say that."
-
 #comun
-
+    label comun4:
     "After this bout of silliness, Gwyneth looked at the clock and called our attention to it. Time really had passed faster than I thought."
-    gwyn "Oh, look at the time! Ah… it’s so late, I’m going to have to call it a day. Well, I really enjoyed today’s meeting, if we can call it that. %(player_name)s, I hope you had fun too!"
+    gwyn "Oh, look at the time! Ah… it’s so late, I’m going to have to call it a day. Well, I really enjoyed today’s meeting, if we can call it that. %(povname)s, I hope you had fun too!"
     mc "I-I did, thank you! Will we be meeting next week at the same time?"
     gwyn "Oh, I almost forgot! There’s a festival in town next week, so we could all go together as next week’s club activity."
     "I’m not sure going out for fun counts as a club activity, but I’m also not sure I care."
@@ -543,8 +566,8 @@ DecB.protecc
     zen "Yes, it’s been so long since we did anything together, and it can serve as a celebration for our new member!"
     betnu "…"
     gwyn "In that case, see you then!"
-    "And just like that, the day ended. I… I’ve been invited. To go out. With friends. Not exactly friends. I’m still just a newcomer from their club. But still. Invited. They could have gone by themselves as friends. But I’m invited. %(player_name)s, today’s been a victory for you! My new university life is just getting better!"
+    "And just like that, the day ended. I… I’ve been invited. To go out. With friends. Not exactly friends. I’m still just a newcomer from their club. But still. Invited. They could have gone by themselves as friends. But I’m invited. %(povname)s, today’s been a victory for you! My new university life is just getting better!"
 
     # This ends the game.
-    #c "%(player_name)s hijo de puta"
+    #c "%(povname)s hijo de puta"
     return
